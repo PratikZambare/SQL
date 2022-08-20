@@ -22,7 +22,7 @@ o	Constraints
 					      DML (Data manipulation language) 
 					      DQL (Data Query Language)
 					      DCL (Data Control Language)
-					      TCL (Transition control language)
+					      TCL (Transaction control language)
 	
 •	Having clause
 	Having clause is same like where clause but the difference between having and where is having clause can also work with an aggregate function.
