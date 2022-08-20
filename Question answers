@@ -1,0 +1,106 @@
+•	Define:
+o	Primary Key: 
+	Primary key is selected for unique identification of tuple from table which doesn’t have duplicate values. 
+o	Foreign key:
+	Foreign key is used to establish connection between 2 tables and it is a primary key of another table 
+o	Candidate key
+	Combination of 1 or more attributes which is used to identify record/tuple uniquely.
+o	Composite key
+	Set of more than 1 attributes which identifies tuple uniqueness.
+o	Super key
+	Super key is a super set of candidate keys.
+o	Key
+	It is an attribute which identifies record or tuple uniquely.
+o	Alternate Key
+	Remaining candidate keys other than primary key.
+o	Constraints
+	Constraints is a rule enforced on data being added into the tables.
+•	What is normalization? What are the forms of normalization?
+	Normalization is a database design technique that reduces data redundancy and ensures that data stored logically.
+•	Types of commands?
+	There are 5 types of commands: DDL (Data Definition Language)
+					      DML (Data manipulation language) 
+					      DQL (Data Query Language)
+					      DCL (Data Control Language)
+					      TCL (Transition control language)
+	
+•	Having clause
+	Having clause is same like where clause but the difference between having and where is having clause can also work with an aggregate function.
+•	What are Constraints in SQL? Explain each.
+	Constraints is a rule set on table to enforced data being added to the tables.
+	There are few constraints like: 
+		UNIQUE:
+			Ensures that all values in a column should be unique.
+		AUTO_INCREAMENT:
+			Auto_increment is a constraint that automatically generate a unique number then a new record is inserted into a table.
+		NOT NULL:
+			Ensures that there are no null values in the column.
+		PRIMARY KEY:
+			A combination of not null and unique constraint and it is a key to identifies each row in the table uniquely.
+		DEFAULT:
+			Set a default value for a column if no value is specified.			LIMIT:
+			Fetch limited data from the tables or how many rows you 			want from the table.
+•	What is a Join? List its different types
+	Cross join:
+		Get all the records from both tables.
+	Inner join:
+		Get all the matching values from both the tables.
+	Left Outer join:
+		Get all values from left table and matching values from right table.
+	Right outer join:
+		Get all values from right table and matching values from the left table
+	Full Outer join:
+		Get all + matching values from both tables.
+	Self-Join:
+		Self-join is a regular join, but the table joined with itself
+•	What is a Self-Join?
+	Self-join is a regular join, but the table joined with itself
+•	What is a Cross-Join?
+	Get all the records from both tables.
+•	What to use when output of 2 queries has to be displayed as a single result?
+	UNION.
+•	Display the details of employee having highest salary.
+	Using sub-query:
+		Select* from employee where salary = (select max(salary)from emp);
+	Using limit clause:
+		select * from employee order by salary desc limit 1;
+•	Display the details of employee having second highest salary.
+	select * from employee order by salary desc limit 1,1;
+•	List the different types of relationships in SQL
+	One to one;
+	One to many;
+	Many to one;
+	Many to many;
+•	What is an Alias in SQL?
+	Aliases is the temporary name to table and columns.
+•	What are the TRUNCATE, DELETE and DROP statements?
+	Drop:
+		Drop is used to delete database, table along with data.
+	Delete:
+		Delete the selected data from the table using where clause.
+	Truncate:
+		Truncate deletes all the data from tables but not the table.
+•	What is the difference between DROP and TRUNCATE statements?
+	Drop is used to delete database as well as table along with the data.
+	--------------------------------------------||---------------------------------------------
+	Truncate is used to delete all the data from the tables but not the table.
+  
+•	What is the difference between DELETE and TRUNCATE statements?
+	Delete the selected data from the table using where clause.
+	--------------------------------------------||---------------------------------------------
+	Truncate is used to delete all the data from the tables but not the table.
+
+
+•	What are Aggregate and Scalar functions?
+	Aggregate functions are used to do operations from the values of the column and a single value is returned.
+					And
+	A scalar function receives a single value for each argument and returns a single-value result.
+•	Tell me about Limit keyword
+	Limit keyword is used to get limited data rows from the table.
+•	Tell me about Distinct keyword
+	Get only unique values from the column without redundancy.
+
+
+
+
+
